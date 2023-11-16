@@ -21,3 +21,10 @@
 - 项目依赖包  
 
     pip install -r requirements.txt
+
+
+## 存在的问题
+1. 每次上传一个文件都需要对上传的文本进行Embedding并存储
+    - 花费大
+    - 所需时间较长
+    后续可以设置判断，如果文本已经存在，则不需要再次进行Embedding，可以节约Embedding的花费与时间
